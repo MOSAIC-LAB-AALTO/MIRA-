@@ -56,7 +56,8 @@ In our case we are using system level container in order to get the flexibility 
     
 #ONOS-
 
-1.download from :https://wiki.onosproject.org/display/ONOS/Downloads
+1.
+download from :https://wiki.onosproject.org/display/ONOS/Downloads
 
 2.
 sudo apt-get install software-properties-common -y && \
