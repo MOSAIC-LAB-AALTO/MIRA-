@@ -78,3 +78,9 @@ cd onos_version
 
 7.
 bin/onos-service start
+
+
+
+#Consideration-
+
+Before starting using the project try to run the environment.py script in the source node (from where to start the process of migration)
