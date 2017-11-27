@@ -17,7 +17,7 @@ import json
 
 class env():
 
-    def createlinkovs(self, IPSDN, IPC1, IPC2):
+    def createlinkovs(self, IPSDN="192.168.122.208", IPC1="192.168.122.134", IPC2="192.168.122.135"):
 
         ssh = paramiko.SSHClient()
         ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
@@ -118,7 +118,7 @@ class env():
 
             print("unable to get PID information about the container")
 
-    def createClient(self, containerName):
+    def createClient(self, containerName="C17"):
         LXC_PATH = "/var/lib/lxc/"
 
         print("container creation :")
@@ -236,3 +236,7 @@ class env():
         basiCmd = 'ip link set dev vethCltOut netns '
         basiCmd = basiCmd + cltPID + ' name vethCltOut'
         os.system(basiCmd)
+        
+g=env.createlinkovs()
+t=env.createClient()
+        
